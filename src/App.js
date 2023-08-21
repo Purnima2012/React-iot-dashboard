@@ -1,25 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import {Routes, Route} from 'react-router-dom'
+import HomePage from './components/Home-component/HomePage';
+import LoginPage from './components/Login-component/LoginPage';
+import DeviceListPage from './components/Device-list/DeviceListPage';
+import DeviceDetailPage from './components/Device-detail/DeviceDetailPage'; 
+import OnboardFormPage from './components/onboard-page/OnboardFormPage'
+import Header from './components/header/Header';
+import { useSelector } from 'react-redux';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const isLoggedIn = useSelector((state) => state.logState.isLoggedIn)
+  return(
+    <>
+    <Header />
+    {!isLoggedIn && <LoginPage />}
+    <Routes>
+      <Route path="/" element={ <HomePage /> }></Route>
+      <Route path="/home" element={<HomePage /> }></Route>
+      <Route path="/device-list" element={<DeviceListPage /> }></Route>
+      <Route path="/device-detail/:id/:name" element={<DeviceDetailPage /> }></Route>
+      <Route path="/onboard-device" element={<OnboardFormPage /> }></Route>
+      
+    </Routes>
+    </>
+    
+  )
 }
 
 export default App;

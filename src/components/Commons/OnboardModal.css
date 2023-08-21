@@ -1,0 +1,16 @@
+.onBoardModal .modal-content {
+    background-color: #F5EFE7;
+    color: #4F709C;
+}
+
+.onBoardModal .modal-body {
+    font-weight: 600;
+}
+
+.onBoardModal.error-modal .modal-content {
+   border: 2px solid maroon;
+}
+
+.onBoardModal.error-modal .modal-header, .onBoardModal.error-modal button {
+    color: maroon;
+ }

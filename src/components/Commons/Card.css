@@ -1,0 +1,45 @@
+.card {
+    width: 18rem;
+    height: 15rem;
+    margin: 1rem;
+    border: 2px solid #4F709C  !important;
+    box-shadow: 3px 3px 3px 3px  #213555 !important;
+}
+
+.card-img-top {
+    height: 250px;
+    width: 200px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F5EFE7;
+}
+
+.card-text {
+    color: #4F709C;
+}
+
+.nav-btn {
+    color: #4F709C;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-btn:hover {
+    color: #213555;
+}
+
+.remove-btn {
+    color: maroon;
+    border: 2px solid maroon;
+    font-weight: bold;
+    background-color: #F5EFE7;
+    padding: 5px 0;
+}
+
+.remove-btn:hover {
+    color:  #A24857;
+}
