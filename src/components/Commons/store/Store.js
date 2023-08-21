@@ -43,8 +43,8 @@ const deviceListSlice = createSlice({
     update(state, action) {
       state.deviceList.map((device) => {
         if(device.id === action.payload.id && device.name === action.payload.name){
-          if(action.payload.newActiveState) device.active = !device.active;
-          if(action.payload.newAtr) device.controlAtr[action.payload.newAtr.atr].set = action.payload.newAtr.value;
+          if(action.payload.newActiveState) return device.active = !device.active;
+          if(action.payload.newAtr) return device.controlAtr[action.payload.newAtr.atr].set = action.payload.newAtr.value;
         }
       })
     },
