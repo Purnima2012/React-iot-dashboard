@@ -1,7 +1,13 @@
-# Getting Started with Create React App
+# 🔰 Live Preview Projects:
+"IOT Dashboard with React and Redux toolkit" Project - [Click To Live Preview](https://iot-dashboard-react.netlify.app)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Login to Live project 
 
+Login with any valid email id and password
+Valid device id's for onboarding new device- [d001, d002,d003,d004,d005,d006,d007,d008] 
+
+---------------------------------------
+# To run the project locally - 
 ## Available Scripts
 
 In the project directory, you can run:
